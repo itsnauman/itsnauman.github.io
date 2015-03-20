@@ -1,0 +1,7 @@
+permalink: /:title
+highlighter: pygments
+markdown: rdiscount
+name: Nauman Ahmad
+url: "naumanahmad.me"
+sass:
+  sass_dir: _sass

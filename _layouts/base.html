@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description" content="{{ content | strip_html | truncate: 160 }}">
+  <meta property="og:image" content="http://www.gravatar.com/avatar/dab7dc58b6d9b6702ddfa595d525b62c?s=50">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.name }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:site_name" content="{{ site.name }}">
+  <meta property="og:type" content="blog">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.name }}">
+  <meta name="twitter:description" content="{{ content | strip_html | truncate: 200 }}">
+  <meta name="twitter:image" content="http://www.gravatar.com/avatar/dab7dc58b6d9b6702ddfa595d525b62c?s=120">
+  <meta name="twitter:site" content="@itsnauman">
+  <meta name="twitter:creator" content="@itsnauman">
+  <meta name="twitter:domain" content="{{ site.url }}">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="http://www.gravatar.com/avatar/dab7dc58b6d9b6702ddfa595d525b62c?s=144">
+  <meta name="msapplication-square70x70logo" content="http://www.gravatar.com/avatar/dab7dc58b6d9b6702ddfa595d525b62c?s=70">
+  <meta name="msapplication-square150x150logo" content="http://www.gravatar.com/avatar/dab7dc58b6d9b6702ddfa595d525b62c?s=150">
+  <link rel="apple-touch-icon-precomposed" href="http://www.gravatar.com/avatar/dab7dc58b6d9b6702ddfa595d525b62c?s=152">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merriweather:400,700italic,900,400italic">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml">
+  <link rel="icon" href="http://www.gravatar.com/avatar/dab7dc58b6d9b6702ddfa595d525b62c?s=32" sizes="32x32">
+  <link rel="icon" href="http://www.gravatar.com/avatar/dab7dc58b6d9b6702ddfa595d525b62c?s=96" sizes="96x96">
+  <link rel="icon" href="http://www.gravatar.com/avatar/dab7dc58b6d9b6702ddfa595d525b62c?s=128" sizes="128x128">
+  <link rel="icon" href="http://www.gravatar.com/avatar/dab7dc58b6d9b6702ddfa595d525b62c?s=195" sizes="195x195">
+  <link rel="icon" href="http://www.gravatar.com/avatar/dab7dc58b6d9b6702ddfa595d525b62c?s=228" sizes="228x228">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.name }}</title>
+</head>
+<body>
+
+  <header class="site-header">
+    <img src="http://www.gravatar.com/avatar/dab7dc58b6d9b6702ddfa595d525b62c?s=192" width="192" height="192" alt="" />
+
+    <h1><a href="/">{{ site.name }}</a></h1>
+
+    <nav>
+      <a href="https://twitter.com/itsnauman" title="@itsnauman">Twitter</a>
+      <a href="https://github.com/itsnauman" title="@itsnauman">GitHub</a>
+      <a href="/blog">Blog</a>
+    </nav>
+  </header>
+
+  {{ content }}
+
+  <footer class="site-footer">
+
+    <p class="twitter-button"><a href="https://twitter.com/itsnauman" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @itsnauman</a></div>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+    {% if page.pull_requests %}
+      <p>Noticed an error in <i>{{ page.title }}</i>?<br><a href="https://github.com/itsnauman/itsnauman.github.io/edit/master/{{ page.path }}">Submit a pull request!</a></p>
+    {% endif %}
+
+    {% if page.creative_commons %}
+      <p><i>{{ page.title }}</i> is licensed under the <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+    {% endif %}
+
+  </footer>
+</body>
+</html>

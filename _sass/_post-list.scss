@@ -1,0 +1,14 @@
+.post-list {
+  text-align: center; // center ol
+
+  ol {
+    display: inline-block; // intrinsic size
+    text-align: left; // reset alignment
+    padding: 0 1em 0 2em;
+  	
+  	> li {
+  		list-style: circle outside;
+      margin: .5em 0;
+  	}
+  }
+}
