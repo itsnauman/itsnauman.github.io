@@ -19,7 +19,7 @@ You can find my work on [GitHub][github].
 Email me if you want to work on something cool
 together!
 
-I mainly work with HTML/CSS, Python, Javascript, Java
+I mainly work with HTML/CSS, Python, Javascript, Java,
 Flask and Node.js on OSX.
 
 [github]: https://github.com/itsnauman
