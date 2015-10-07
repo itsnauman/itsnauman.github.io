@@ -1,7 +1,57 @@
-permalink: /:title
-highlighter: pygments
-markdown: rdiscount
+markdown: redcarpet
+redcarpet:
+  extensions:
+    - smart
+    - strikethrough
+    - superscript
+    - tables
+    - with_toc_data
+    - footnotes
+gems:
+  - jekyll-feed
+  - jemoji
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: "drafts"
+    values:
+      layout: post
+
 name: Nauman Ahmad
-url: "naumanahmad.me"
-sass:
-  sass_dir: _sass
+email: nauman.ahmad@nyu.edu
+domain: naumanahmad.me
+gravatar: ca0c9cb798fd7f80444740a4dbaef7b9
+
+nav:
+  pages:
+    - name: Home
+      href: /
+
+    - name: Projects
+      href: /projects.html
+
+    - name: Résumé
+      href: /resume.html
+
+  links:
+    - name: GitHub
+      href: https://github.com/itsnauman
+      icon: fa-github-alt
+
+    - name: LinkedIn
+      href: https://ca.linkedin.com/in/itsnauman
+      icon: fa-linkedin
+
+    - name: Email
+      href: mailto:nauman.ahmad@nyu.edu
+      icon: fa-envelope

@@ -1,7 +1,23 @@
 ---
-layout: base
+layout: default
 ---
 
-<article class="hero">
-  {{ content }}
-</article>
+<figure class="mugshot">
+  <img alt="My face" width="200"
+       src="//gravatar.com/avatar/{{ site.gravatar }}?s=200">
+</figure>
+
+{{ content }}
+
+<hr>
+
+{% for post in site.posts %}
+  <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+  <p class="subtitle">
+    <small>
+      <time datetime="{{ post.date | date:'%Y-%m-%d' }}">
+        {{ post.date | date:'%A, %-d %B, %Y' }}
+      </time>
+    </small>
+  </p>
+{% endfor %}
