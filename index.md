@@ -3,10 +3,10 @@ layout: index
 ---
 
 Hi, I'm Nauman Ahmad.
-I am a 18-year-old
+I am a 19-year-old
 software developer
 currently studying
-Computer Science at NYU.
+Computer Science at NYU. I'm obsessed with software architecture, code quality and building things.
 
 I spend my days coding web app backends,
 APIs and Arduinos, and I play video games in my
