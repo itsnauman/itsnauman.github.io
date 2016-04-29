@@ -63,6 +63,7 @@ a:hover {
 }
 
 img#me {
+  border-radius: 2%;
   width: 30%;
   margin-right: 2%;
   float: left;
