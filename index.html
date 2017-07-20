@@ -10,9 +10,14 @@ layout: default
             <li>
                 <a href="{{ item.url }}">{{ item.title }}</a> /
             </li>
-          {% elsif item.title == "bookshelf" %}
+          {% elsif item.title == "twitter" %}
             <li>
-                <a href="{{ item.url }}">{{ item.title }}</a>
+                <a href="{{ item.url }}">{{ item.title }}</a> /
+            </li>
+
+          {% elsif item.title == "resume" %}
+            <li>
+                <a href="{{ item.url }}">{{ item.title }}</a> /
             </li>
           {% endif %}
         {% endfor %}
