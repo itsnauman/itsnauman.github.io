@@ -1,36 +1,55 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+---
 
-<head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="icon" type="image/x-icon" href="favicon.ico" />
-  <link rel="icon" type="image/png" href="images/favicon.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Nauman Ahmad. I'm a software engineer obsessed with code.">
-  <title>Nauman Ahmad - Software Engineer</title>
-</head>
-
-  <div class="container">
-    <h1>Hey there, I'm Nauman 😃</h1>
-    <a href="images/me.png" target="_blank">
-      <img id="me" src="images/me.png" />
-    </a>
-    <p>I have no idea how you got here but let me tell you a little about myself.</p>
-    <p>I'm a 20 year old Software Engineer studying Computer Science and Business at New York University.</p>
-    <p>My goal is to build products that change peoples' lives while learning something new every day.</p>
-    <p>My resume is available <a href="https://www.dropbox.com/s/t9vbbgivlcidqr3/Resume%202019%20v2.pdf?dl=0" target="_blank">here</a>. You can contact me at <a href="mailto:me@nauman.io">me@nauman.io</a>.</p>
-    <ul class="social">
-      <li><a href="https://github.com/itsnauman" target="_blank"><i class="fa fa-github"></i></a></li>
-      <li><a href="https://twitter.com/naumanio" target="_blank"><i class="fa fa-twitter"></i></a></li>
-      <li><a href="https://facebook.com/itsnauman" target="_blank"><i class="fa fa-facebook"></i></a></li>
-      <li><a href="https://www.linkedin.com/in/nauman-ahmad-7b3091b8" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+<div class="header">
+    <h1>{{ site.name }}</h1>
+    <ul>
+        {% for item in site.data.navigation %}
+          {% if item.title == "about" %}
+            <li>
+                <a href="{{ item.url }}">{{ item.title }}</a> /
+            </li>
+          {% elsif item.title == "bookshelf" %}
+            <li>
+                <a href="{{ item.url }}">{{ item.title }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
     </ul>
+</div>
 
-    <blockquote id="footQuote" class="quote">"The best way to predict the future iѕ to invent it. 🚀"</blockquote>
-  </div>
-  <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-</body>
+<p id="landing-page-text">Hi! I have no idea how you got here but let me tell you a little about myself. My name is Nauman Ahmad and I'm interested in ⭐️ machine learning ⭐️ and ⭐️ data science⭐️ . Check out my <a href="/me">about me</a> to see what this is all about, or read some of my blog posts below.</p>
 
-</html>
+<div class="title">
+    <h1>✨ Machine Learning:</h1>
+    <ul>
+        {% for post in site.categories.ml %}
+        <li>
+            <span class="date">{{ post.date | date: '%Y %b %d' }}</span> - <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<div class="title">
+    <h1>✨ Data Science:</h1>
+    <ul>
+        {% for post in site.categories.ds %}
+        <li>
+            <span class="date">{{ post.date | date: '%Y %b %d' }}</span> - <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<div class="title">
+    <h1>✨ Etc:</h1>
+    <ul>
+        {% for post in site.categories.etc %}
+        <li>
+            <span class="date">{{ post.date | date: '%Y %b %d' }}</span> - <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
