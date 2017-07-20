@@ -2,7 +2,7 @@
 layout: about
 ---
 
-Hi! My name is Nauman Ahmad 😀. I'm a junior studying Computer Science at New York University who's passionate about using Machine Learning and Software Engineering to solve a wide variety of problems. My goal is to build products that change peoples' lives while learning something new every day.
+Hi! My name is Nauman Ahmad 😀. I'm a junior studying Computer Science and Mathematics at New York University who's passionate about using Machine Learning and Software Engineering to solve a wide variety of problems. My goal is to build products that change peoples' lives while learning something new every day.
 
 I love tasty 🍔, 🗽, ☕️ and 🏓 in no particular order.
 
