@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="header">
-    <h1>{{ site.name }}</h1>
+    <h1>{{ site.name }} 🔥 🚀</h1>
     <ul>
         {% for item in site.data.navigation %}
           {% if item.title == "about" %}
@@ -15,9 +15,13 @@ layout: default
                 <a href="{{ item.url }}">{{ item.title }}</a> /
             </li>
 
-          {% elsif item.title == "resume" %}
+          {% elsif item.title == "github" %}
             <li>
                 <a href="{{ item.url }}">{{ item.title }}</a> /
+            </li>
+          {% elsif item.title == "resume" %}
+            <li>
+                <a href="{{ item.url }}">{{ item.title }}</a>
             </li>
           {% endif %}
         {% endfor %}
@@ -27,7 +31,7 @@ layout: default
 <p id="landing-page-text">Hi! I have no idea how you got here but let me tell you a little about myself. My name is Nauman Ahmad and I'm interested in machine learning and data science. Check out my <a href="/me">about me</a> to see what this is all about, or read some of my blog posts below.</p>
 
 <div class="title">
-    <h1>✨ Blog:</h1>
+    <h1>✨ Blog Posts:</h1>
     <ul>
         {% for post in site.categories.etc %}
         <li>
