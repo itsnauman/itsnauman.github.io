@@ -1,65 +1,50 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
 
-<div class="header">
-    <h1>{{ site.name }} 🔥 🚀</h1>
-    <ul>
-        {% for item in site.data.navigation %}
-          {% if item.title == "about" %}
-            <li>
-                <a href="{{ item.url }}">{{ item.title }}</a> /
-            </li>
-          {% elsif item.title == "twitter" %}
-            <li>
-                <a href="{{ item.url }}">{{ item.title }}</a> /
-            </li>
+<head>
+  <meta name="google-site-verification" content="aEZXQ9Sa6ffNUZlsa_5niffn9eSFTty4CqdiVz-OqyA">
+  <link href="https://fonts.googleapis.com/css?family=Gentium+Basic|Gentium+Book+Basic:400i,700|PT+Sans:400,700" rel="stylesheet">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Nauman Ahmad. I'm a software engineer who loves building stuff.">
+  <title>Nauman Ahmad - Software Engineer</title>
+</head>
 
-          {% elsif item.title == "github" %}
-            <li>
-                <a href="{{ item.url }}">{{ item.title }}</a> /
-            </li>
-          {% elsif item.title == "resume" %}
-            <li>
-                <a href="{{ item.url }}">{{ item.title }}</a>
-            </li>
-          {% endif %}
-        {% endfor %}
-    </ul>
-</div>
+<body>
 
-<p id="landing-page-text">Hi! I have no idea how you got here but let me tell you a little about myself. My name is Nauman Ahmad and I'm interested in machine learning and data science. Check out my <a href="/me">about me</a> to see what this is all about, or read some of my blog posts below.</p>
+  <div id="bar"></div>
 
-<div class="title">
-    <h1>✨ Blog Posts:</h1>
-    <ul>
-        {% for post in site.categories.etc %}
+  <div id="body">
+    <h1 class="desktop">{Nauman Ahmad}</h1>
+    <h1 class="mobile">Nauman</h1>
+
+    <div id="info">
+      <p>Hi, I’m Nauman<span class="mobile"> Ahmad</span> 😃. I’m a senior at New York University studying Computer Science and I'm headed to <b>Facebook</b> after graduation as a Software Engineer.</p>
+      I'm passionate about using computer science to solve a wide variety of problems. My goal is to not only build products that change people's lives but also learn something new every day.</p>
+      <p>You can find my resume <a href="https://www.dropbox.com/s/btd9lb5g04n5g5g/nauman_resume_2019.pdf?dl=0" target="_blank">here</a>. &#9632;</p>
+    </div>
+
+    <div id="connect">
+      <h2>🤝 Let's connect.</h2>
+      <ul>
         <li>
-            <span class="date">{{ post.date | date: '%Y %b %d' }}</span> - <a href="{{ post.url }}">{{ post.title }}</a>
+          <a href="https://www.linkedin.com/in/itsnauman/">LinkedIn</a>
         </li>
-        {% endfor %}
-    </ul>
-</div>
-
-<!-- <div class="title">
-    <h1>✨ Data Science:</h1>
-    <ul>
-        {% for post in site.categories.ds %}
         <li>
-            <span class="date">{{ post.date | date: '%Y %b %d' }}</span> - <a href="{{ post.url }}">{{ post.title }}</a>
+          <a href="http://twitter.com/naumanio">Twitter</a>
         </li>
-        {% endfor %}
-    </ul>
-</div>
-
-<div class="title">
-    <h1>✨ Etc:</h1>
-    <ul>
-        {% for post in site.categories.etc %}
         <li>
-            <span class="date">{{ post.date | date: '%Y %b %d' }}</span> - <a href="{{ post.url }}">{{ post.title }}</a>
+          <a href="http://github.com/itsnauman">GitHub </a>
         </li>
-        {% endfor %}
-    </ul>
-</div>
- -->
+        <li>
+          <a href="mailto:nauman-ahmad@outlook.com">Email</a>
+        </li>
+      </ul>
+    </div>
+
+    <div id="quoteBar"></div>
+
+    <blockquote id="quote">"Truth can only be found in one place: the code."</blockquote>
+  </div>
+</html>
