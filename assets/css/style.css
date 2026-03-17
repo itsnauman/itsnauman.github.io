@@ -8,11 +8,13 @@ body {
 }
 
 img.photo {
-  width: 90px;
-  height: 90px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 16px;
+  float: right;
+  margin: 0 0 16px 24px;
+  shape-outside: circle(50%);
 }
 
 h1 {
