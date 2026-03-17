@@ -7,31 +7,33 @@ title: Nauman Ahmad
 
 <h1>Nauman Ahmad</h1>
 
-<div class="intro">
-  <p>Short intro line goes here — what you do, what you care about.</p>
-  <p>A slightly longer bio paragraph. Talk about your background, what you're working on, or what interests you. Keep it conversational and concise.</p>
+<p>Short intro line goes here — what you do, what you care about.</p>
+
+<p>A slightly longer bio paragraph. Talk about your background, what you're working on, or what interests you.</p>
+
+<div class="section">
+  <p>Contact &amp; elsewhere:</p>
+  <ul>
+    <li><a href="mailto:you@naumanahmad.org">Email</a></li>
+    <li><a href="https://twitter.com/">Twitter</a></li>
+    <li><a href="https://github.com/itsnauman">GitHub</a></li>
+    <li><a href="https://linkedin.com/">LinkedIn</a></li>
+  </ul>
 </div>
 
-<div class="links">
-  <a href="mailto:you@naumanahmad.org">Email</a>
-  <a href="https://twitter.com/" target="_blank">Twitter</a>
-  <a href="https://github.com/itsnauman" target="_blank">GitHub</a>
-  <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
-</div>
-
-<div class="blog">
-  <h2>Writing</h2>
+<div class="section">
+  <p>Writing:</p>
   {% assign posts = site.posts %}
   {% if posts.size > 0 %}
-    <ul class="post-list">
+    <ul class="blog-list">
       {% for post in posts %}
         <li>
           <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          <span class="date">{{ post.date | date: "%b %Y" }}</span>
+          <span class="date">— {{ post.date | date: "%b %Y" }}</span>
         </li>
       {% endfor %}
     </ul>
   {% else %}
-    <p class="no-posts">Nothing here yet.</p>
+    <p>Nothing here yet.</p>
   {% endif %}
 </div>
