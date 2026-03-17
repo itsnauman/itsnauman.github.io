@@ -4,6 +4,8 @@ title: "Hello World"
 date: 2026-03-16
 ---
 
-This is your first blog post. Replace it with something real, or delete it and create your own.
+This website was built in roughly 15 minutes by me and an AI arguing about CSS floats. The AI wanted me to have a circular profile photo. I said no. It complied, but I could tell it was disappointed.
 
-Write posts as Markdown files in the `_posts` folder. Name them `YYYY-MM-DD-title.md` and they'll show up on the homepage automatically.
+If you're reading this, congratulations — you've reached the end of the internet. There's nothing else after this. You can close your laptop now.
+
+More real posts coming soon. Probably.
