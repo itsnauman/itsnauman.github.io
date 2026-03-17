@@ -1,0 +1,12 @@
+title: Nauman Ahmad
+description: Personal website of Nauman Ahmad
+url: https://naumanahmad.org
+baseurl: ""
+
+markdown: kramdown
+permalink: /blog/:title/
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
